@@ -47,6 +47,10 @@ coverage:
         target: 75
         flags:
         - gnatsd_streaming
+      JFrog_Platform:
+        target: 75
+        flags:
+        - jfrog_platform
       Kernelcare:
         target: 75
         flags:
@@ -59,6 +63,10 @@ coverage:
         target: 75
         flags:
         - logstash
+      NS1:
+        target: 75
+        flags:
+        - ns1
       Neo4j:
         target: 75
         flags:
@@ -99,6 +107,10 @@ coverage:
         target: 75
         flags:
         - reboot_required
+      Redis_Enterprise:
+        target: 75
+        flags:
+        - redisenterprise
       Redis_Sentinel:
         target: 75
         flags:
@@ -226,6 +238,11 @@ flags:
     paths:
     - gnatsd_streaming/datadog_checks/gnatsd_streaming
     - gnatsd_streaming/tests
+  jfrog_platform:
+    carryforward: true
+    paths:
+    - jfrog_platform/datadog_checks/jfrog_platform
+    - jfrog_platform/tests
   kernelcare:
     carryforward: true
     paths:
@@ -256,6 +273,11 @@ flags:
     paths:
     - nextcloud/datadog_checks/nextcloud
     - nextcloud/tests
+  ns1:
+    carryforward: true
+    paths:
+    - ns1/datadog_checks/ns1
+    - ns1/tests
   nvml:
     carryforward: true
     paths:
@@ -316,6 +338,11 @@ flags:
     paths:
     - redis_sentinel/datadog_checks/redis_sentinel
     - redis_sentinel/tests
+  redisenterprise:
+    carryforward: true
+    paths:
+    - redisenterprise/datadog_checks/redisenterprise
+    - redisenterprise/tests
   riak_repl:
     carryforward: true
     paths:

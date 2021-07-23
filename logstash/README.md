@@ -30,7 +30,7 @@ If you are using Agent v6.8+ follow the instructions below to install the Logsta
 
 2. [Restart the Agent][9]
 
-#### Metric Collection
+#### Metric collection
 
 Add this configuration setup to your `conf.yaml` file to start gathering your [Logstash metrics][10]:
 
@@ -50,7 +50,7 @@ See the [sample conf.yaml][11] for all available configuration options.
 
 Finally, [restart the Agent][12] to begin sending Logstash metrics to Datadog.
 
-#### Log Collection
+#### Log collection
 
 Datadog has [an output plugin][13] for Logstash that takes care of sending your logs to your Datadog platform.
 
@@ -146,11 +146,9 @@ See [metadata.csv][21] for a list of metrics provided by this check.
 
 The Logstash check does not include any events.
 
-### Service checks
+### Service Checks
 
-`logstash.can_connect`:
-
-Returns `Critical` if the Agent cannot connect to Logstash to collect metrics; returns `OK` otherwise.
+See [service_checks.json][23] for a list of service checks provided by this integration.
 
 ## Troubleshooting
 
@@ -166,6 +164,7 @@ Returns `Critical` if the Agent cannot connect to Logstash to collect metrics; r
 Check that the `url` in `conf.yaml` is correct.
 
 If you need further help, contact [Datadog support][22].
+
 
 [1]: https://app.datadoghq.com/account/settings#agent
 [2]: https://docs.datadoghq.com/agent/guide/community-integrations-installation-with-docker-agent/
@@ -189,3 +188,4 @@ If you need further help, contact [Datadog support][22].
 [20]: https://docs.datadoghq.com/agent/guide/agent-commands/#service-status
 [21]: https://github.com/DataDog/integrations-extras/blob/master/logstash/metadata.csv
 [22]: http://docs.datadoghq.com/help
+[23]: https://github.com/DataDog/integrations-extras/blob/master/logstash/assets/service_checks.json

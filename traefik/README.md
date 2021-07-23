@@ -29,7 +29,7 @@ If you are using Agent v6.8+ follow the instructions below to install the Traefi
 
 2. [Restart the Agent][9]
 
-#### Metric Collection
+#### Metric collection
 
 Add this configuration setup to your `traefik.yaml` file to start gathering your [metrics][10]:
 
@@ -52,7 +52,7 @@ Configuration Options:
 
 [Restart the Agent][9] to begin sending Traefik metrics to Datadog.
 
-#### Log Collection
+#### Log collection
 
 **Available for Agent >6.0**
 
@@ -107,11 +107,12 @@ The Traefik check does not include any events.
 
 ### Service Checks
 
-Query Traefik and expect `200` as return status code.
+See [service_checks.json][14] for a list of service checks provided by this integration.
 
-## Development
+## Troubleshooting
 
-Refer to the [main documentation][14] for more details about how to test and develop Agent based integrations.
+Need help? Contact [Datadog support][15].
+
 
 [1]: https://traefik.io
 [2]: https://docs.datadoghq.com/agent/guide/community-integrations-installation-with-docker-agent/
@@ -126,4 +127,5 @@ Refer to the [main documentation][14] for more details about how to test and dev
 [11]: https://docs.traefik.io/configuration/logs/#traefik-logs
 [12]: https://docs.traefik.io/configuration/logs/#clf-common-log-format
 [13]: https://docs.datadoghq.com/agent/guide/agent-commands/#service-status
-[14]: https://docs.datadoghq.com/developers/
+[14]: https://github.com/DataDog/integrations-extras/blob/master/traefik/assets/service_checks.json
+[15]: https://docs.datadoghq.com/help
